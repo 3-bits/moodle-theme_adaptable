@@ -1,0 +1,364 @@
+/*
+* This file is part of Moodle - http://moodle.org/
+*
+* Moodle is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* Moodle is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+*
+*
+* Adaptable Blocks Style sheet 
+*
+* Version details
+* 
+* @package    theme_adaptable
+* @copyright  2015 Jeremy Hopkins (Coventry University)
+* @copyright  2015 Fernando Acedo (3-bits.com)
+* @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+*
+*/
+
+.block-region-front .block {
+    border: none;
+}
+
+.block-region-front .block .header {
+    border: none;
+}
+
+.block.hidden .header {
+    border-bottom: 0px;
+}
+
+/* reset border values */
+.block {
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    border-radius: important !0;
+}
+
+/* block titles */
+.block .header,
+#dockeditempanel .dockeditempanel_hd {
+    border-width: [[setting:blockheaderbordertop]] [[setting:blockheaderborderright]] [[setting:blockheaderborderbottom]] [[setting:blockheaderborderleft]];
+    border-color: [[setting:blockbordercolor]];
+    border-style: [[setting:blockheaderbordertopstyle]];
+    padding: 10px 10px;
+    background: [[setting:blockheaderbackgroundcolor]];
+  -webkit-border-radius: [[setting:blockheadertopradius]] [[setting:blockheadertopradius]] [[setting:blockheaderbottomradius]] [[setting:blockheaderbottomradius]];
+  -moz-border-radius: [[setting:blockheadertopradius]] [[setting:blockheadertopradius]] [[setting:blockheaderbottomradius]] [[setting:blockheaderbottomradius]];
+  border-radius: [[setting:blockheadertopradius]] [[setting:blockheadertopradius]] [[setting:blockheaderbottomradius]] [[setting:blockheaderbottomradius]];
+}
+
+.block .header {
+    padding-right: 0px;
+}
+
+.block .header .title h2 {
+  font-weight: normal;
+  margin: 0 0;
+  padding: 0 0;
+  text-transform: none;
+  font-size: 16px;
+  color: [[setting:blockheadercolor]];
+  margin: 0px 0px;
+  font-weight:bold;
+  text-shadow: none;
+}
+
+.block .header .block_action {
+  margin: 0 0;
+  margin-top: -5px;
+}
+
+
+/* block content */
+.block > .content , #dockeditempanel .dockeditempanel_bd {
+  border-width: [[setting:blockmainbordertop]] [[setting:blockmainborderright]] [[setting:blockmainborderbottom]] [[setting:blockmainborderleft]];
+  border-color: [[setting:blockbordercolor]];
+  border-style: [[setting:blockmainbordertopstyle]];
+  padding: 10px 10px;
+  font-weight: normal;
+
+  background: [[setting:blockbackgroundcolor]];
+  -webkit-border-radius: [[setting:blockmaintopradius]] [[setting:blockmaintopradius]] [[setting:blockmainbottomradius]] [[setting:blockmainbottomradius]];
+  -moz-border-radius: [[setting:blockmaintopradius]] [[setting:blockmaintopradius]] [[setting:blockmainbottomradius]] [[setting:blockmainbottomradius]];
+  border-radius: [[setting:blockmaintopradius]] [[setting:blockmaintopradius]] [[setting:blockmainbottomradius]] [[setting:blockmainbottomradius]];
+}
+
+.block .content a,
+.block .content li a,
+.block .content td a {
+    color: [[setting:blocklinkcolor]];
+}
+
+.block .content a:hover,
+.block .content li a:hover,
+.block .content td a:hover {
+    color: [[setting:blocklinkhovercolor]];
+    text-decoration: none !important;
+}
+
+
+.block .block-hider-show, .block .block-hider-hide {
+  width: 18px;
+}
+
+/** Some specific block styles for calendar block, login block, my profile block, etc. **/
+
+.block_login .content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.block_login .c1.btn input {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  width: 96%;
+}
+
+.block_course_overview .content {
+    margin: 0;
+}
+
+.block_calendar_month table.minicalendar.calendartable td,
+.block_calendar_month table.minicalendar.calendartable th {
+    border: none !important;
+}
+
+.block_calendar_month table.minicalendar {
+    margin-bottom: 0px !important;
+}
+
+.block_calendar_month table.minicalendar.calendartable th abbr {
+    border: none !important;
+    text-decoration: none;
+}
+
+.block_comments div.content li {
+    list-style-type: none;
+}
+
+/*****/
+
+
+
+.questionbankwindow.block {
+  padding: 0px;
+}
+
+.block_tree_box hr {
+  background: transparent;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+/*quiz editing block header */
+#page-mod-quiz-edit .questionbankwindow div.header {
+  background-color: #eee;
+  color: inherit;
+}
+
+#page-mod-quiz-edit .questionbankwindow div.header a {
+  color: inherit;
+}
+
+.block .content a.dimmed {
+    font-style: italic;
+}
+
+#mod_quiz_navblock input {
+    white-space: normal;
+}
+
+.loginbox .loginform .form-input input {
+    width: 50%;
+}
+
+.loginbox .loginform .form-input {
+    float: right;
+    width: 66%;
+}
+
+.loginbox .loginform .form-label {
+  width: 33%;
+}
+
+.block.invisible:hover {
+    opacity: 1;
+}
+
+.block .block-hider-show, .block .block-hider-hide {
+    width: 12px;
+}
+
+body.has_dock div#dock {
+  z-index: 3;
+}
+
+a.dimmed, a.dimmed:link, a.dimmed:visited, a.dimmed_text, a.dimmed_text:link, a.dimmed_text:visited, .dimmed_text, .dimmed_text a, .dimmed_text a:link, .dimmed_text a:visited, .usersuspended, .usersuspended a, .usersuspended a:link, .usersuspended a:visited, .dimmed_category, .dimmed_category a {
+  color: #999;
+}
+
+
+/* squared dot */
+.block_settings .block_tree li.item_with_icon > p img {
+    left: 3px;
+    top: 2px;
+}
+
+
+/* add or hide block icons */
+.showblockicons .block .header .title h2:before{
+font-family:FontAwesome;
+font-size:1.25em;
+margin-right:.3em;
+content:"\f0c9";
+font-weight: normal;
+}
+
+.showblockicons .block_news_items .header .title h2:before {
+  content: "\f0a1";
+  font-family: FontAwesome;
+}
+.showblockicons .block_navigation .header .title h2:before {
+  content: "\f0e8";
+  font-family: FontAwesome;
+}
+.showblockicons .block_calendar_upcoming .header .title h2:before,
+.showblockicons .block_calendar_month .header .title h2:before {
+  content: "\f073";
+  font-family: FontAwesome;
+}
+.showblockicons .block_course_list .header .title h2:before {
+  content: "\f108";
+  font-family: FontAwesome;
+}
+.showblockicons .block_completionstatus .header .title h2:before,
+.showblockicons .block_selfcompletion .header .title h2:before {
+  content: "\f0e4";
+  font-family: FontAwesome;
+}
+.showblockicons .block_blog_menu .header .title h2:before {
+  content: "\f02d";
+  font-family: FontAwesome;
+}
+.showblockicons .block_quiz_results .header .title h2:before {
+  content: "\f080";
+  font-family: FontAwesome;
+}
+.showblockicons .block_quiz_navblock .header .title h2:before {
+  content: "\f126";
+  font-family: FontAwesome;
+}
+.showblockicons .block_glossary_random .header .title h2:before {
+  content: "\f0eb";
+  font-family: FontAwesome;
+}
+.showblockicons .block_book_toc .header .title h2:before {
+  content: "\f02d";
+  font-family: FontAwesome;
+}
+.showblockicons .block_participants .header .title h2:before,
+.showblockicons .block_online_users .header .title h2:before {
+  content: "\f0c0";
+  font-family: FontAwesome;
+}
+.showblockicons .block_html .header .title h2:before {
+  content: "\f022";
+  font-family: FontAwesome;
+}
+.showblockicons .block_section_links .header .title h2:before {
+  content: "\f02e";
+  font-family: FontAwesome;
+}
+.showblockicons .block_activity_modules .header .title h2:before {
+  content: "\f12e";
+  font-family: FontAwesome;
+}
+.showblockicons .block_comments .header .title h2:before {
+  content: "\f075";
+  font-family: FontAwesome;
+}
+.showblockicons .block_settings .header .title h2:before {
+  content: "\f085";
+  font-family: FontAwesome;
+}
+.showblockicons .block_admin_bookmarks .header .title h2:before {
+  content: "\f02e";
+  font-family: FontAwesome;
+}
+.showblockicons .block_blog_tags .header .title h2:before,
+.showblockicons .block_tags .header .title h2:before {
+  content: "\f02c";
+  font-family: FontAwesome;
+}
+.showblockicons .block_private_files .header .title h2:before {
+  content: "\f114";
+  font-family: FontAwesome;
+}
+.showblockicons .block_block_mentees .header .title h2:before {
+  content: "\f0c0";
+  font-family: FontAwesome;
+}
+.showblockicons .block_messages .header .title h2:before {
+  content: "\f0e0";
+  font-family: FontAwesome;
+}
+.showblockicons .block_community .header .title h2:before {
+  content: "\f0ac";
+  font-family: FontAwesome;
+}
+.showblockicons .block_recent_activity .header .title h2:before {
+  content: "\f017";
+  font-family: FontAwesome;
+}
+.showblockicons .block_rss_client .header .title h2:before {
+  content: "\f09e";
+  font-family: FontAwesome;
+}
+.showblockicons .block_search_forums .header .title h2:before {
+  content: "\f0e6";
+  font-family: FontAwesome;
+}
+.showblockicons .block_myprofile .header .title h2:before {
+  content: "\f007";
+  font-family: FontAwesome;
+}
+.showblockicons .block_adminblock .header .title h2:before {
+  content: "\f009";
+  font-family: FontAwesome;
+}
+.showblockicons .block_feedback .header .title h2:before {
+  content: "\f087";
+  font-family: FontAwesome;
+}
+.showblockicons .block_flickr .header .title h2:before {
+  content: "\f03e";
+  font-family: FontAwesome;
+}
+.showblockicons .block_youtube .header .title h2:before {
+  content: "\f145";
+  font-family: FontAwesome;
+}
+.showblockicons .block_course_badges .header .title h2:before,
+.showblockicons .block_badges .header .title h2:before {
+  content: "\f0a3";
+  font-family: FontAwesome;
+}
+.showblockicons .block_twitter_search .header .title h2:before {
+  content: "\f099";
+  font-family: FontAwesome;
+}

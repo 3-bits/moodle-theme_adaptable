@@ -1,0 +1,319 @@
+.courses .coursebox.even,
+.courses .coursebox {
+  background: #fafafa !important;
+  border-radius: 6px;
+}
+
+.courses .coursebox.even {
+  background: #eee !important;
+}
+
+.coursebox > .info > .coursename a {
+  font-weight: normal;
+  font-size: 80%;
+}
+
+.coursebox > .info > h3.name,
+.course_category_tree .category > .info .name {
+    font-size: 120%;
+    font-weight: normal;
+    margin: 0;
+}
+
+.coursebox .content {
+  clear: none;
+}
+
+.coursebox {
+  padding: 0 0;
+  border: 0px;
+  border-radius: 0px;
+}
+
+#page .course-content ul li.section.main {
+  border: [[setting:coursesectionborderwidth]] [[setting:coursesectionborderstyle]] [[setting:coursesectionbordercolor]];
+  border-radius: [[setting:coursesectionborderradius]];
+  margin-bottom: 20px;
+}
+
+.site-topic ul.section, .course-content ul.section {
+  margin: 0em 1em;
+}
+
+#newdiscussionform {
+  text-align: center;
+}
+
+#searchforums {
+  margin: 5px 0px 5px 5px;
+}
+
+.course-content .current {
+    background-color: transparent;
+    border-left: 0px solid #ccc;
+    border-right: 0px dashed #ccc;
+    margin-top: 0px !important;
+}
+
+.panel-body {
+  overflow: hidden;
+}
+
+.panel-body .courseimage img {
+    float: right;
+    margin-bottom: 10px;
+    max-width: 60px;
+    margin-left: 5px;
+}
+/*
+.panel .summary {
+  position: relative;
+}
+*/
+.course-content ul li.section .side {
+  display: none;
+}
+
+.editing .course-content ul li.section .side {
+  display: inherit;
+}
+
+.course-content ul.topics li.section .content,
+.course-content ul.weeks li.section .content {
+  margin: 0 0;
+}
+
+.editing .course-content ul.topics li.section .content,
+.editing .course-content ul.weeks li.section .content {
+  margin: 0;
+}
+
+.section-handle {
+    margin: 0;
+    position: relative;
+    top: 12px;
+}
+
+.course-content ul.topics li.section .left {
+    padding-top: 2px;
+    text-align: right;
+}
+
+.course-content ul li.section.main {
+    margin: 0;
+/*  padding-top: 12px;*/
+}
+
+h3.sectionname {
+    background: [[setting:coursesectionheaderbg]];
+    color: [[setting:sectionheadingcolor]];
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 3px 10px;
+    border-bottom: [[setting:coursesectionheaderborderstyle]] [[setting:coursesectionheaderbordercolor]] [[setting:coursesectionheaderborderwidth]];
+    -webkit-border-radius: [[setting:coursesectionheaderborderradiustop]];
+    -webkit-border-bottom-right-radius: [[setting:coursesectionheaderborderradiusbottom]];
+    -webkit-border-bottom-left-radius: [[setting:coursesectionheaderborderradiusbottom]];
+    -moz-border-radius: [[setting:coursesectionheaderborderradiustop]];
+    -moz-border-radius-bottomright: [[setting:coursesectionheaderborderradiusbottom]];
+    -moz-border-radius-bottomleft: [[setting:coursesectionheaderborderradiusbottom]];
+    border-radius: [[setting:coursesectionheaderborderradiustop]];
+    border-bottom-right-radius: [[setting:coursesectionheaderborderradiusbottom]];
+    border-bottom-left-radius: [[setting:coursesectionheaderborderradiusbottom]];
+}
+
+.section .activity .mod-indent-outer {
+    padding-left: 23px;
+}
+
+/* Alter nav on single-section for better onetopic course format support */
+.single-section .nav {
+    margin-bottom: 0px;
+}
+
+.single-section .nav-tabs {
+    border-bottom: none;
+}
+
+.path-course-view .completionprogress {
+    color: #666;
+    float: none;
+    font-size: 90%;
+    padding: 0 0 10px;
+}
+
+.path-course-view .section .summary {
+    padding: 10px 0px 0px 20px;
+}
+
+#gridshadebox_content .content .summary, #gridshadebox_content .content ul.section {padding: 0 20px;}
+
+.course-content .current  .content .sectionname {
+    background: [[setting:currentcolor]];
+}
+
+.course-content ul li.section.hidden .sectionname,
+.course-content ul li.section.hidden .content > div {
+    margin-right: 40px;
+}
+
+#page .covtiles.panel {
+  background: transparent !important;
+  border: 0px;
+  position: relative;
+}
+
+#page .covtiles.panel .panel-body {
+  border: 1px solid #e4e4e4;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px #c1c1c1;
+  padding: 5px;
+  position: relative;
+}
+
+#marketblocks.covtiles {
+  overflow: visible;
+}
+
+#marketblocks .covtiles {
+  border-radius: 2px;
+  box-shadow: 0 1px 2px #c1c1c1;
+  position: relative;
+  border: 5px solid #fff;
+}
+
+#page .covtiles.panel:hover .panel-body {
+  background: transparent !important;
+}
+
+#marketblocks.covtiles .internalmarket {
+  background: transparent;
+  border: 0px;
+   padding: 10px 5px;
+    text-align: left;
+    position: relative;
+}
+
+#marketblocks.covtiles h3 {
+  margin-bottom: 0px;
+}
+
+#marketblocks.covtiles a.submit {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#page .covtiles.panel .cimbox {
+   background-position: 50% 0 !important;
+    background-size: cover !important;
+    height: 200px;
+    overflow: hidden;
+}
+
+#page .covtiles.panel .cimbox, #page .covtiles.panel:hover .cimbox, #page .covtiles.panel:hover {
+  opacity: 1;
+}
+
+.covtiles.coursebox.panel.hover .panel-body .coursebox-content h3, #marketblocks.covtiles h4 {
+  background: [[setting:covbkcolor]];
+    border: 5px solid #fff;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    color: [[setting:covfontcolor]] !important;
+    font-size: 18px;
+    font-weight: 800;
+    left: -5px;
+    margin: 0;
+    padding: 5px 10px;
+    text-align: left;
+    width: auto;
+    max-width: 100%;
+}
+
+.covtiles.coursebox.panel.hover .panel-body .coursebox-content h3 a, #marketblocks.covtiles h4 a, .covtiles.coursebox.panel.hover .panel-body .coursebox-content h3 a:hover, #marketblocks.covtiles h4 a:hover {
+  color: [[setting:covfontcolor]] !important;
+}
+
+.covtiles.coursebox.panel.hover .panel-body .coursebox-content h3 a {
+  color: [[setting:covfontcolor]] !important;
+}
+
+.covtiles .coursebox-content {
+  position: relative;
+  padding: 0 0;
+}
+
+.coursebox.hover.covtiles2 .summary {
+  display: block !important;
+  background: [[setting:covbkcolor]];
+  bottom: 0;
+    left: 0;
+    padding: 0 0;
+    right: 0;
+    top: inherit;
+    width: 98%;
+    height: 0px;
+    min-height: 0px;
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 1;
+    -webkit-transition: max-height 1.0s !important;
+  -moz-transition: max-height 1.0s !important;
+  transition: max-height 1.0s !important;
+}
+
+.coursebox.hover.covtiles2:hover .summary {
+  height: auto;
+  min-height: 30px;
+  padding: 10px 1%;
+  max-height: 1000px;
+  opacity: 1;
+  -webkit-transition: max-height 1.0s !important;
+  -moz-transition: max-height 1.0s !important;
+  transition: max-height 1.0s !important;
+}
+
+.covtiles.panel.hover .coursebtn.submit.btn {
+  display: block;
+  margin-top: 10px;
+}
+
+.coursebox.hover.covtiles .summary {
+    background: [[setting:covbkcolor]];
+    color: [[setting:covfontcolor]] !important;
+    display: block;
+    position: relative;
+    text-align: left;
+    min-width: auto;
+}
+
+#page .covtiles.panel .panel-body {
+  padding-bottom: 38px;
+}
+
+.covtiles .coursebox-content {
+    bottom: 5px;
+    left: 5px;
+    right: 4px;
+    height: 38px;
+    position: absolute;
+    width: auto;
+    -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+  background: [[setting:covbkcolor]];
+}
+
+.covtiles .coursebox-content:hover {
+    height: 80%;
+    position: absolute;
+    width: auto;
+    background: [[setting:covbkcolor]];
+    -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
